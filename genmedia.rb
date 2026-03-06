@@ -5,21 +5,21 @@
 class Genmedia < Formula
   desc "AI media generation CLI powered by fal.ai"
   homepage "https://github.com/ilkerzg/genmedia"
-  version "0.1.1-beta"
+  version "0.1.2-beta"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.1-beta/genmedia_darwin_amd64.tar.gz"
-      sha256 "44b2b1fd77e96cf1dc307fd62398073db674382112e34e00d3b37c51ff3a4907"
+      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.2-beta/genmedia_darwin_amd64.tar.gz"
+      sha256 "1ca5b8f908dbab28cd2225402978664dcc131751267cb564158255204fbd9e43"
 
       define_method(:install) do
         bin.install "genmedia"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.1-beta/genmedia_darwin_arm64.tar.gz"
-      sha256 "ec245c00d8548ef2df49855a9f62a5f394a679b0eb35c8d89ab0a2297a47e4d4"
+      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.2-beta/genmedia_darwin_arm64.tar.gz"
+      sha256 "9d4060f17e88d6326b2fa7bc8c3cc6efcb54fb90c43cb741135ea13443d219ca"
 
       define_method(:install) do
         bin.install "genmedia"
@@ -29,15 +29,15 @@ class Genmedia < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.1-beta/genmedia_linux_amd64.tar.gz"
-      sha256 "f7c996232e0cfd78dfa3c1ebb1c35f325fb1f5d914df48fdc030722f1466f776"
+      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.2-beta/genmedia_linux_amd64.tar.gz"
+      sha256 "4ac0cca274ece0c45ff70ceebb742f07e434e0d9c99b6dfb2dad9b6b2d7fce2d"
       define_method(:install) do
         bin.install "genmedia"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.1-beta/genmedia_linux_arm64.tar.gz"
-      sha256 "cff74f07b0de4e69e686254a6e1a45e8922bb5703f2ea03f4a4d1d435b28513d"
+      url "https://github.com/ilkerzg/genmedia/releases/download/v0.1.2-beta/genmedia_linux_arm64.tar.gz"
+      sha256 "432b3a50a6c1ca696f4c06a511c00273a8f2e64ca59ed04694513197d7e39785"
       define_method(:install) do
         bin.install "genmedia"
       end
